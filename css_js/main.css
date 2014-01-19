@@ -345,11 +345,13 @@ nav div:hover {
 	position:absolute;
 	top:287px;
 	left:187px;
+	z-index:5;
 }
 #poofboard {
 	position:absolute;
 	top:287px;
 	left:295px;
+	z-index:5;
 }
 .spooftelbox {
    width:78px;
