@@ -357,7 +357,7 @@ nav div:hover {
    width:78px;
    height:21px;
    opacity:0;
-   background-image:url('../img/poof.svg');
+   background-image:url('../img/poof.png');
    -webkit-animation: playc 1s steps(5) .5s ;
    -moz-animation: playc 1s steps(5) .5s;
    animation: playc 1s steps(5) .5s;
@@ -379,7 +379,7 @@ nav div:hover {
    width:50px;
    height:21px;
    opacity:0;
-   background-image:url('../img/poofboard.svg');
+   background-image:url('../img/poofboard.png');
    -webkit-animation: playd 1s steps(5) .5s ;
    -moz-animation: playd 1s steps(5) .5s;
    animation: playd 1s steps(5) .5s;
