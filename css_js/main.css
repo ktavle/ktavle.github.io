@@ -5,6 +5,7 @@
 }
 body {
 	background:#4c4c4c;
+	overflow:hidden;
 }
 #backg {
 	position:relative;
@@ -249,7 +250,7 @@ nav div:hover {
 }
 #procedure {
 	display:none;
-	line-height:24px;
+	line-height:22px;
 }
 #detail {
 	display:none;
@@ -301,6 +302,38 @@ nav div:hover {
 	left:300px;
 	opacity:0;
 }
+#box {
+	position:absolute;
+	top:0px;
+	left:110px;
+	opacity:0;
+}
+#weare {
+	position:absolute;
+	top:0px;
+	left:0px;
+	opacity:0;
+}
+.wedrop {
+	-webkit-animation:we .5s ease-in forwards;
+	-moz-animation:we .5s ease-in forwards;
+	animation:we .5s ease-in forwards;
+}
+@-webkit-keyframes we {
+	from {top:0px;opacity:0;}
+	20% {top:20px;opacity:1;}
+	to {top:210px;opacity:1;}
+}
+@-moz-keyframes we {
+	from {top:0px;opacity:0;}
+	20% {top:20px;opacity:1;}
+	to {top:210px;opacity:1;}
+}
+@keyframes we {
+	from {top:0px;opacity:0;}
+	20% {top:20px;opacity:1;}
+	to {top:210px;opacity:1;}
+}
 .teldrop {
 	-webkit-animation:tel .5s ease-in forwards;
 	-moz-animation:tel .5s ease-in forwards;
@@ -341,6 +374,26 @@ nav div:hover {
 	20% {top:20px;opacity:1;}
 	to {top:210px;opacity:1;}
 }
+.boxdrop {
+	-webkit-animation:box .5s ease-in forwards;
+	-moz-animation:box .5s ease-in forwards;
+	animation:box .5s ease-in forwards;
+}
+@-webkit-keyframes box {
+	from {top:0px;opacity:0;}
+	20% {top:20px;opacity:1;}
+	to {top:257px;opacity:1;}
+}
+@-moz-keyframes box {
+	from {top:0px;opacity:0;}
+	20% {top:20px;opacity:1;}
+	to {top:257px;opacity:1;}
+}
+@keyframes box {
+	from {top:0px;opacity:0;}
+	20% {top:20px;opacity:1;}
+	to {top:257px;opacity:1;}
+}
 #pooftelbox {
 	position:absolute;
 	top:287px;
@@ -351,6 +404,18 @@ nav div:hover {
 	position:absolute;
 	top:287px;
 	left:295px;
+	z-index:5;
+}
+#poofbox {
+	position:absolute;
+	top:287px;
+	left:105px;
+	z-index:5;
+}
+#poofwe {
+	position:absolute;
+	top:287px;
+	left:-7px;
 	z-index:5;
 }
 .spooftelbox {
@@ -430,7 +495,7 @@ nav div:hover {
 	from {top:0px;opacity:1;}
 	to {top:-10px;opacity:0}
 }
-#sbox {
+#stelbox {
 	position:absolute;
 	top:290px;
 	left:197px;
@@ -456,6 +521,34 @@ nav div:hover {
 	-moz-transform:scale(0);
 	transform:scale(0);
 }
+#sbox {
+	position:absolute;
+	top:290px;
+	left:108px;
+	height:13px;
+	width:45px;
+	opacity:0.6;
+	border-radius: 45px/12px;
+	background:#1e1e1e;
+	-webkit-transform:scale(0);
+	-moz-transform:scale(0);
+	transform:scale(0);
+	
+}
+#swe {
+	position:absolute;
+	top:288px;
+	left:5px;
+	height:18px;
+	width:60px;
+	opacity:0.6;
+	border-radius: 60px/17px;
+	background:#1e1e1e;
+	-webkit-transform:scale(0);
+	-moz-transform:scale(0);
+	transform:scale(0);
+	
+}
 .sboxani {
 	-webkit-animation:sscale .6s forwards;
 	-moz-animation:sscale .6s forwards;
@@ -474,16 +567,32 @@ nav div:hover {
 	to {transform:scale(1);}
 }
 .cdetail {
-	top:75px;
+	top:60px;
 	left:80px;
-	height:80px;
+	height:90px;
 	width:250px;
+	z-index:-1;
 }
 .cprocedure {
-	top:-20px;
-	left:82px;
+	top:-25px;
+	left:16px;
 	height:190px;
-	width:450px;
+	width:600px;
+	z-index:-1;
+}
+.cdesign {
+	top:5px;
+	left:-35px;
+	height:200px;
+	width:290px;
+	z-index:-1;
+}
+.cwe{
+	top:45px;
+	left:-130px;
+	height:120px;
+	width:290px;
+	z-index:-1;
 }
 .callout {
 	position: relative;
@@ -509,10 +618,11 @@ nav div:hover {
 }
 #telbox:hover + .callout {
 	opacity:1;
-	top:65px;
+	top:55px;
 	-webkit-transition-duration: 0.5s;
 	-moz-transition-duration: 0.5s;
 	transition-duration: 0.5s;
+	z-index:5;
 }
 #board:hover + .callout {
 	opacity:1;
@@ -520,5 +630,206 @@ nav div:hover {
 	-webkit-transition-duration: 0.5s;
 	-moz-transition-duration: 0.5s;
 	transition-duration: 0.5s;
+	z-index:5;
 }
-	
+#box:hover + .callout {
+	opacity:1;
+	top:-5px;
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	z-index:5;
+}
+#weare:hover + .callout {
+	opacity:1;
+	top:35px;
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	z-index:5;
+}
+#flip {
+	position:relative;
+	margin:0px auto;
+	width:700px;
+	height:450px;
+	-webkit-transform:scale(1);
+	-moz-transform:scale(1);
+	transform:scale(1);
+}
+.flipact {
+	-webkit-animation:zoom .6s forwards;
+	-moz-animation:zoom .6s forwards;
+	animation:zoom .6s forwards;
+}
+@-webkit-keyframes zoom {
+	from {-webkit-transform:scale(1);}
+	to {-webkit-transform:scale(0.5);opacity:0;}
+}
+@-moz-keyframes zoom {
+	from {-moz-transform:scale(1);}
+	to {-moz-transform:scale(0.5);opacity:0;}
+}
+@keyframes zoom {
+	from {transform:scale(1);}
+	to {transform:scale(0.5);opacity:0;}
+}
+#flipup {
+	position:relative;
+	margin:0px auto;
+	width:700px;
+	height:450px;
+	-webkit-transform:scale(1.5);
+	-moz-transform:scale(1.5);
+	transform:scale(1.5);
+	display:none;
+}
+.flipupact {
+	-webkit-animation:zoomu .6s forwards;
+	-moz-animation:zoomu .6s forwards;
+	animation:zoomu .6s forwards;
+}
+@-webkit-keyframes zoomu {
+	from {-webkit-transform:scale(1.5);}
+	to {-webkit-transform:scale(1);opacity:1;}
+}
+@-moz-keyframes zoomu {
+	from {-moz-transform:scale(1.5);}
+	to {-moz-transform:scale(1);opacity:1;}
+}
+@keyframes zoomu {
+	from {transform:scale(1.5);}
+	to {transform:scale(1);opacity:1;}
+}
+.list {
+	position:relative;
+	margin:0px auto;
+	width:700px;
+}
+.twitter {
+	position:absolute;
+	top:400px;
+	left:50px;
+	cursor:default;
+}
+.bbm {
+	position:absolute;
+	top:400px;
+	left:220px;
+	cursor:default;
+}
+#monster2 {
+	position:absolute;
+	top:100px;
+	left:350px;
+	width:230px;
+	height:300px;
+	-webkit-animation:mons2 1s ease-in-out infinite;
+	-moz-animation:mons2 1s ease-in-out infinite;
+	animation:mons2 1s ease-in-out infinite;
+}
+@-webkit-keyframes mons2 {
+	from {-webkit-transform:translate(0px,0px);}
+	25% {-webkit-transform:translate(20px,10px);}
+	50% {-webkit-transform:translate(0px,20px);}
+	75% {-webkit-transform:translate(-20px,-10px);}
+	to{-webkit-transform:translate(0px,0px);}
+}
+@-moz-keyframes mons2 {
+	from {-moz-transform:translate(0px,0px);}
+	25% {-moz-transform:translate(20px,10px);}
+	50% {-moz-transform:translate(0px,20px);}
+	75% {-moz-transform:translate(-20px,-10px);}
+	to{-moz-transform:translate(0px,0px);}
+}
+@keyframes mons2 {
+	from {transform:translate(0px,0px);}
+	25% {transform:translate(20px,10px);}
+	50% {transform:translate(0px,20px);}
+	75% {transform:translate(-20px,-10px);}
+	to{transform:translate(0px,0px);}
+}
+.eye3 {
+	position:absolute;
+	top:18px;
+	left:60px;
+	border-radius:16px;
+	background:#ffffff;
+	height:16px;
+	width:16px;
+}
+.eye4 {
+	position:absolute;
+	top:20px;
+	left:100px;
+	border-radius:20px;
+	background:#ffffff;
+	height:20px;
+	width:20px;
+}
+.mouth2 {
+	position:absolute;
+	top:45px;
+	left:58px;
+	-webkit-animation:mo2 1s ease-in-out infinite;
+	-moz-animation:mo2 1s ease-in-out infinite;
+	animation:mo2 1s ease-in-out infinite;
+}
+@-webkit-keyframes mo2 {
+	from {-webkit-transform:scale(0.5);}
+	50% {-webkit-transform:scale(1.5);}
+	to {-webkit-transform:scale(0.5);}
+}
+@-moz-keyframes mo2 {
+	from {-moz-transform:scale(0.5);}
+	50% {-moz-transform:scale(1.5);}
+	to {-moz-transform:scale(0.5);}
+}
+@keyframes mo2 {
+	from {transform:scale(0.5);}
+	50% {transform:scale(1.5);}
+	to {transform:scale(0.5);}
+}
+#man {
+	position:absolute;
+	top:60px;
+	left:80px;
+	-webkit-animation:ma 2s ease-in-out infinite;
+	-moz-animation:ma 2s ease-in-out infinite;
+	animation:ma 2s ease-in-out infinite;
+}
+@-webkit-keyframes ma {
+	from {-webkit-transform:translate(0px,0px);}
+	50% {-webkit-transform:translate(0px,20px);}
+	to{-webkit-transform:translate(0px,0px);}
+}
+@-moz-keyframes ma {
+	from {-moz-transform:translate(0px,0px);}
+	50% {-moz-transform:translate(0px,20px);}
+	to{-moz-transform:translate(0px,0px);}
+}
+@keyframes ma {
+	from {transform:translate(0px,0px);}
+	50% {transform:translate(0px,20px);}
+	to{transform:translate(0px,0px);}
+}
+#pel {
+	position:absolute;
+	top:80px;
+	left:100px;
+	-webkit-animation:pel .6s ease-in-out infinite;
+	-moz-animation:pel .6s ease-in-out infinite;
+	animation:pel .6s ease-in-out infinite;
+}
+@-webkit-keyframes pel {
+	from {-webkit-transform:translate(0px,0px);}
+	to{-webkit-transform:translate(300px,50px);}
+}
+@-moz-keyframes pel {
+	from {-moz-transform:translate(0px,0px);}
+	to{-moz-transform:translate(300px,50px);}
+}
+@keyframes pel {
+	from {transform:translate(0px,0px);}
+	to{transform:translate(300px,50px);}
+}
