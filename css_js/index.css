@@ -112,5 +112,18 @@ section {
 }
 #latest li {
 	display:inline;
-	padding:0px 5px;
+	padding:0px 10px;
+}
+#latest img {
+	-webkit-transition:.3s;
+	-moz-transition:.3s;
+	transition:.3s;
+}
+#latest img:hover {
+	-webkit-transform:scale(1.2);
+	-webkit-transition:-webkit-transform .3s;
+	-moz-transform:scale(1.2);
+	-moz-transition:-moz-transform .3s;
+	transform:scale(1.2);
+	transition:transform .3s;
 }
