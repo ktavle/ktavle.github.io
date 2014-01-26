@@ -1,6 +1,6 @@
 @font-face {
 	font-family:pixel;
-	src: url("https://doc-0g-10-docs.googleusercontent.com/docs/securesc/qkqh9r4gmbrethui7hj9oen59f8gabcb/kknrtcp4rui2a5fgcsmp9d4b53nool56/1390716000000/14129030519149760676/14129030519149760676/0B42pYf-eOf2WenhYc0laYmFPeXc?e=download&h=16653014193614665626&nonce=n6j7p2cp37g26&user=14129030519149760676&hash=5vl5h1juvkubl2kqsrvpt5fhau8cqnn8") format("truetype");
+	src: url("../fonts/Shanti-Regular.ttf") format("truetype");
 }
 body {
 	font-family:pixel;
@@ -15,7 +15,7 @@ small {
 }
 .twitter-follow-button {
 	position:fixed;
-	right:160px;
+	right:180px;
 	bottom:7px;
 }
 section {
