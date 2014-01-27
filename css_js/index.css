@@ -33,14 +33,14 @@ section {
 #second {
 	position:absolute;
 	top:0px;
-	left:1000px;
+	left:1100px;
 	width:800px;
 	display:none;
 }
 #third {
 	position:absolute;
-	left:0px;
-	top:800px;
+	left:-1100px;
+	top:0px;
 	width:800px;
 	display:none;
 }
@@ -52,17 +52,17 @@ section {
 @-webkit-keyframes m {
 	from {-webkit-transform:scale(1);}
 	50% {-webkit-transform:scale(0.5);}
-	100% {-webkit-transform:scale(1);-webkit-transform:translate(-1000px,0px);}
+	100% {-webkit-transform:scale(1);-webkit-transform:translate(-1100px,0px);}
 }
 @-moz-keyframes m {
 	from {-moz-transform:scale(1);}
 	50% {-moz-transform:scale(0.5);}
-	100% {-moz-transform:scale(1);-moz-transform:translate(-1000px,0px);}
+	100% {-moz-transform:scale(1);-moz-transform:translate(-1100px,0px);}
 }
 @keyframes m {
 	from {transform:scale(1);}
 	50% {transform:scale(0.5);}
-	100% {transform:scale(1);transform:translate(-1000px,0px);}
+	100% {transform:scale(1);transform:translate(-1100px,0px);}
 }
 .move2 {
 	-webkit-animation:n 2s ease-in-out forwards;
@@ -70,19 +70,19 @@ section {
 	animation:n 2s ease-in-out forwards;
 }
 @-webkit-keyframes n {
-	from {-webkit-transform:scale(1);-webkit-transform:translate(-1000px,0px);}
+	from {-webkit-transform:scale(1);-webkit-transform:translate(-1100px,0px);}
 	50% {-webkit-transform:scale(0.5);}
-	100% {-webkit-transform:scale(1);-webkit-transform:translate(0px,-800px);}
+	100% {-webkit-transform:scale(1);-webkit-transform:translate(1100px,0px);}
 }
 @-moz-keyframes n {
-	from {-moz-transform:scale(1);-moz-transform:translate(-1000px,0px);}
+	from {-moz-transform:scale(1);-moz-transform:translate(-1100px,0px);}
 	50% {-moz-transform:scale(0.5);}
-	100% {-moz-transform:scale(1);-moz-transform:translate(0px,-800px);}
+	100% {-moz-transform:scale(1);-moz-transform:translate(1100px,0px);}
 }
 @keyframes n {
-	from {transform:scale(1);transform:translate(-1000px,0px);}
+	from {transform:scale(1);transform:translate(-1100px,0px);}
 	50% {transform:scale(0.5);}
-	100% {transform:scale(1);transform:translate(0px,-800px);}
+	100% {transform:scale(1);transform:translate(1100px,0px);}
 }
 .move3 {
 	-webkit-animation:l 2s ease-in-out forwards;
@@ -90,17 +90,17 @@ section {
 	animation:l 2s ease-in-out forwards;
 }
 @-webkit-keyframes l {
-	from {-webkit-transform:scale(1);-webkit-transform:translate(0px,-800px);}
+	from {-webkit-transform:scale(1);-webkit-transform:translate(1100px,0px);}
 	50% {-webkit-transform:scale(0.5);}
 	100% {-webkit-transform:scale(1);-webkit-transform:translate(0px,0px);}
 }
 @-moz-keyframes l {
-	from {-moz-transform:scale(1);-moz-transform:translate(0px,-800px);}
+	from {-moz-transform:scale(1);-moz-transform:translate(1100px,0px);}
 	50% {-moz-transform:scale(0.5);}
 	100% {-moz-transform:scale(1);-moz-transform:translate(0px,0px);}
 }
 @keyframes l {
-	from {transform:scale(1);transform:translate(0px,-800px);}
+	from {transform:scale(1);transform:translate(1100px,0px);}
 	50% {transform:scale(0.5);}
 	100% {transform:scale(1);transform:translate(0px,0px);}
 }
@@ -126,4 +126,30 @@ section {
 	-moz-transition:-moz-transform .3s;
 	transform:scale(1.2);
 	transition:transform .3s;
+}
+.i1 {
+	position:absolute;
+	top:380px;
+	left:550px;
+	background-image:url('http://i.imgur.com/qSo2CSN.png');
+	width:40px;
+	height:120px;
+}
+.i1:hover {
+    -webkit-animation:a 1.2s steps(9);
+    -moz-animation:a 1.2s steps(9);
+    animation:a 1.2s steps(9);
+}
+@-webkit-keyframes a {
+   from { background-position:0px;}
+     to { background-position:-360px;}
+}
+
+@-moz-keyframes a {
+   from { background-position:0px;}
+     to { background-position:-360px;}
+}
+@keyframes a {
+   from { background-position:0px;}
+     to { background-position:-360px;}
 }
